@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Courier New', Courier, monospace;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  padding: 10px;
+  width: 200px;
+  margin: 50px;
+  outline: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add{
+  background: transparent;
+  border: 1px solid #737373;
+  padding: 10px;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrab-items{
+  width: 330px;
+}
+.wrab-items li{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background: #d9d9d9;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px #a4a4a4 solid;
+  padding : 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.wrab-items button{
+  background: transparent;
+  border: 1px solid #737373;
+  padding: 10px;
+  cursor: pointer;
+  border-left:1px solid  #a4a4a4;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+} 
+li p{
+  overflow-wrap: break-word;
+  width: 235px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.done{
+  background: #9dedff !important;
+}
+.notDone{
+  background-color: black ;
+}
+.clear{
+  margin-left: 10px
 }
