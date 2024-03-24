@@ -4,13 +4,7 @@ const Input = () => {
     window.localStorage.setItem('todos',[])
     const [val, setVal] = useState(""); // input value 
     const [item, setItem] = useState([]); // items i want to do 
-
     const element = document.getElementsByTagName("li");
-    function Delet(index) {
-        const newItem = [...item];
-        newItem.splice(index, 1);
-        setItem(newItem)
-    }
 
     function handleKeyPress(event) {
         if (event.key === 'Enter') {
@@ -22,9 +16,9 @@ const Input = () => {
     }
 
     let get = (index) => element[index].className = element[index].className === "notDone" ? "done" : "notDone"; 
-    let clear = () => setItem([])
-    let add = () => val.trim().length === 0 ? null : (setItem([...item, val],setVal("")))
-
+    let clear = () => setItem([]);
+    let add = () => val.trim().length === 0 ? null : (setItem([...item, val],setVal("")));
+    let Delet = (index) =>console.log( element[index].className = "hidden" )
     return (
         <div>
             <div>
